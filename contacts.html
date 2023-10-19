@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Kontakty | Volejbal centrum Lužiny </title>
+        <link rel="icon" href="images/logo/icon1.png" type="image/icon type">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script defer src="javascript/shopping-button.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;600&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="nav-container">
+                <div class="container">
+                    <div class="logo-container">
+                        <a href="index.html">
+                            <img src="images/logo/logo3.png" style="width: auto; height: 55px;">
+                        </a>
+                    </div>
+                    <div class="navbar">
+                        <nav class="navbar-nav">
+                            <ul>
+                                <li><a href="index.html">DOMŮ</a></li>
+                                <li><a href="product-categories/products.php">PRODUKTY</a></li>
+                                <li><a href="about-us.html">O NÁS</a></li>
+                                <li><a href="contacts.html">KONTAKTY</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">  
+                            <form> 
+                                <input class="search-bar" type="search" placeholder="Vyhledávání...">
+                                <img src="images/icons/search2.png" style="width: 18px">
+                            </form>    
+                        </div>
+                        <div class="shopping-basket-container">
+                            <div class="shopping-basket-icon">
+                                <a id="cart-button">
+                                    <img class="bag-icon no-select" src="images/icons/bag.png" style="height: auto; width: 20px;">
+                                    <img class="bag-hover-icon no-select" src="images/icons/bag-hover.png" style="height: auto; width: 20px;">
+                                    <div class="number-of-items">0</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-links-low-width">
+                    <nav class="navbar-nav">
+                        <ul>
+                            <li><a href="index.html">DOMŮ</a></li>
+                            <li><a href="product-categories/products.php">PRODUKTY</a></li>
+                            <li><a href="about-us.html">O NÁS</a></li>
+                            <li><a href="contacts.html">KONTAKTY</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="shopping-basket-bg">
+                <div class="slide-in" id="shopping-basket">
+                    <a id="cart-close">
+                        <img src="images/icons/close-square-line.png" style="height: 24px;">
+                    </a>
+                    <h3> KOŠÍK </h3>
+                    <hr size="3px">
+                    <p class="empty-shopping-cart"> Váš košík je prázdný </p>
+                    <div class="sc-content-paste" id="sc-content-paste">
+
+                    </div>
+                    <div class="buy-button">
+                        <a href="shopping-basket.html">
+                            <button > Koupit </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="fade-in" id="shopping-basket-background">
+
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="contacts-main">
+                <h1 style="margin-bottom: 30px;"> Kontakty </h1>
+                <div class="contacts-container">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.271785381787!2d14.329630515682783!3d50.04373977942127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95fc8f205f8d%3A0x20f78198329bb4f4!2sOC%20Lu%C5%BEiny!5e0!3m2!1scs!2scz!4v1638031921119!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="contact-info">
+                        <h2> Kontaktní údaje </h2>
+                        <p> 
+                            Volejbal Centrum Lužiny a.s. <br> 
+                            Archeologická 2256 <br>
+                            155 00 Praha 5 <br>
+                            Česká Republika
+                        </p>
+                        <p>
+                            Telefon: +420 666 222 333 <br>
+                            Email:
+                            <a href="mailto: info@vbluziny.cz">
+                                info@vbluziny.cz
+                            </a> <br>
+                            Web:
+                            <a href="https://vbcl.000webhostapp.com/">
+                                vbcl.000webhostapp.com
+                            </a>
+                        </p>
+                        <br>
+                        <h2>
+                            Pracovní doba prodejna Lužiny
+                        </h2>
+                        <p>
+                            Po-Pá: 8:00-20:00 <br>
+                            So: 9:00-18:00 <br>
+                            Ne: 10:00-16:00 <br>
+                            <br>
+                            <a href="about-us.html#shop"> Více info o prodejně </a>
+                        </p>
+                    </div>
+                    <div class="dm-us" id="contact-us-form">
+                        <form action="contact-form.php" method="POST">
+                            <h2 style="margin-bottom: 20px;"> Napište nám </h2>
+                            <table>
+                                <tr>
+                                    <td class="contact-form-name">Jméno:</td>
+                                    <td>
+                                        <input type="text" id="firstname" name="firstname" maxlength="40" style="width: 500px; height: 25px;" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="contact-form-name">Příjmení:</td>
+                                    <td>
+                                        <input type="text" id="lastname" name="lastname" maxlength="40" style="width: 500px; height: 25px;" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="contact-form-name">Email:</td>
+                                    <td>
+                                        <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" maxlength="40" style="width: 500px; height: 25px;" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="contact-form-name">Zpráva:</td>
+                                    <td>
+                                        <textarea type="text" id="msg" name="msg" maxlength="1000" style="width: 500px; height: 200px;" required></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button class="form-button" type="submit">Poslat</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-navigation-bar">
+                <div class="footer-columns">
+                    <ul class="folow-us">
+                        <h3>SLEDUJTE NÁS</h3>
+                        <li class="follow-us-facebook">
+                            <a href="https://www.facebook.com/" target="blank">
+                                <img src="images/icons/facebook-footer.png" style="width: 30px;">
+                            </a>
+                            <a href="https://www.facebook.com/" target="blank">Facebook</a>
+                        </li>
+                        <li class="follow-us-instagram">
+                            <a href="https://www.instagram.com/" target="blank">
+                                <img src="images/icons/instagram-footer.png" style="width: 30px">
+                            </a>
+                            <a href="https://www.instagram.com/" target="blank">Instagram</a>
+                        </li>
+                        <li class="follow-us-twitter">
+                            <a href="https://twitter.com/?lang=cs" target="blank">
+                                <img src="images/icons/twitter-footer.png" style="width: 30px">
+                            </a>
+                            <a href="https://twitter.com/?lang=cs" target="blank">Twitter</a>
+                        </li>
+                    </ul>
+
+                    <div class="contact-us">
+                        <h3>KONTAKTUJTE NÁS</h3>
+                        <ul class="contact-us-links">
+                            <li><a href="contacts.html">Kontakty</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contacts.html#contact-us-form">Napiště nám</a></li>
+                            <li><a href="">sth</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-us">
+                        <h3>O NÁS</h3>
+                        <ul class="about-us-links">
+                            <li><a href="about-us.html">Info o nás</a></li>
+                            <li><a href="terms-and-conditions.html">Obchodní podmínky</a></li>
+                            <li><a href="contacts.html">Prodejna</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="credits">
+                    © 2021 Volejbal Centrum Lužiny - Webdesign by Tomáš Soukal
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
