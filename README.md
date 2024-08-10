@@ -1,7 +1,4 @@
 # Vojelbal eshop website
- Maturitní práce  
+### Maturitní práce 2022  
  https://soukaltom.github.io/Vojelbal-eshop-website/  
- Tímto projektem jsem se chtěl za daný čas co nejvíce přiblížit k funkčnímu eshopu a responsivní stránce na všechny velikosti obrazovek.  
- Na začátku jsem neměl téměř žádné zkušenosti s tvorbou webů a vše jsem se učil od začátku a skrz html a css jsem se dostal i k javascriptu a php.  
- Web byl nahrán i na hostingu, pro kompletní funkčnost php a sql databáze s nabízenými produkty, které bylo možné přidávat do košíku, ale bez hostingu nebo Apache serveru tuto funkčnost ztrácí.  
- Mimo jiné je zde i využito javascriptu a js knihovny jQuery pro automatickou slideshow a tlačítko pro nákupní košík.
+ Moje první zkušenost s tvorbou webových stránek, kdy jsem se snažil vytvořit plně responsivní eshop s volejbalovým vybavením s nulovými znalostmi html, css, js a php.  
